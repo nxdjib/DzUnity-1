@@ -34,5 +34,14 @@
     "addresse": "03 Rue Mohamed Belouizdad, Douar 16000",
     "url": "",
     "tel": "0772 56 08 43"
+  },
+  {
+    "name": "Association d3awi El khir",
+    "willaya": "Constantine",
+    "association": true,
+    "besoin": ["Bavette", "Couches"],
+    "addresse": "Ain Smara",
+    "url": "",
+    "tel": " 0657 36 35 19"
   }
 ]
