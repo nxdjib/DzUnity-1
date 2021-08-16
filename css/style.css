@@ -26,6 +26,7 @@
 /* ------------------------------
 ------------------------------
 ------------------------------ */
+
 header {
   position: fixed;
   background-color: #ffffff;
@@ -74,7 +75,7 @@ header {
   display: block;
   border: none;
 
-  background-color: #19C525;
+  background-color: #19c525;
 
   color: #ffffff;
   font-size: 1.2rem;
@@ -101,7 +102,7 @@ header {
   display: block;
   border: none;
 
-  background-color: #19C525;
+  background-color: #19c525;
 
   border-radius: 0 2rem 2rem 0;
 
@@ -198,6 +199,7 @@ header {
   padding: 2rem 3rem;
 
   display: grid;
+  grid-template-columns: auto fit-content(10ch);
 
   grid-template-areas:
     "association__name willaya"
@@ -209,17 +211,17 @@ header {
 
 #List .association__name {
   font-size: 1.6rem;
-  color: #19C525;
+  color: #19c525;
 
   grid-area: association__name;
 }
 
 #List .willaya {
   display: inline-block;
-  background-color: #19C525;
+  background-color: #19c525;
   border-radius: 0.5rem;
   padding: 0.5rem 1.2rem;
-  margin-left: 1.3rem;
+  margin-left: 1rem;
 
   font-weight: 600;
   color: #ffffff;
@@ -268,12 +270,12 @@ header {
   display: inline-block;
   padding: 0.5rem 1.2rem;
   margin: 0.3rem 0 0.3rem 0.4rem;
-  border: 0.1rem solid #19C525;
+  border: 0.1rem solid #19c525;
   border-radius: 0.5rem;
 
   list-style-type: none;
   font-weight: 600;
-  color: #19C525;
+  color: #19c525;
 }
 
 @media only screen and (max-width: 600px) {
