@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>DZ UNITY | Liste</title>
+  </head>
+
+  <body>
+    <header class="container__wrapper">
+      <div id="Header" class="container">
+        <div class="title__wrapper">
+          <a href="https://dzunity.com">
+            <img class="logo" src="../img/don.png" alt="" />
+          </a>
+
+          <h1 class="title">
+            Trouvez un point de récolte de don près de chez vous
+          </h1>
+        </div>
+        <form action="" class="filters">
+          <div class="filters__wrapper">
+            <select name="willaya" id="willaya__filter">
+              <option value="alger">Ville</option>
+              <option value="alger">Alger</option>
+              <option value="tizi Ouzou">Tizi Ouzou</option>
+              <option value="skikda">Skikda</option>
+            </select>
+            <span class="icons material-icons-sharp"> arrow_drop_down </span>
+          </div>
+
+          <div class="filters__wrapper">
+            <select name="donnation__type" id="donnation__type">
+              <option value="aliment">Type de donnation</option>
+              <option value="aliment">Aliment</option>
+              <option value="bavette">Bavette</option>
+              <option value="eau">Eau</option>
+            </select>
+            <span class="icons material-icons-sharp"> arrow_drop_down </span>
+          </div>
+
+          <div class="filters__wrapper">
+            <input type="submit" id="submit_btn" value="Recherche" />
+            <span class="search_icon material-icons-sharp"> search </span>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main id="List" class="container__wrapper">
+      <div class="container">
+        <article class="carte">
+          <h2 class="association__name">Association Sidra</h2>
+          <p class="willaya">Alger</p>
+          <div class="contact__infos">
+            <span class="icons material-icons-sharp"> location_on </span>
+            <address class="addresse">
+              Stade 20 août 1955 à Ruisseaux, Alger
+            </address>
+            <span class="icons material-icons-sharp"> phone </span>
+            <a class="phone" href="tel:0560 72 65 86">0560 72 65 86</a>
+          </div>
+          <div class="besoin">
+            <ul>
+              <p class="besoin_label">Besoin:</p>
+              <li class="besoin-item">Lait</li>
+              <li class="besoin-item">Couches</li>
+              <li class="besoin-item">Bavette</li>
+              <li class="besoin-item">Lait</li>
+              <li class="besoin-item">Bavette</li>
+              <li class="besoin-item">Lait</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
