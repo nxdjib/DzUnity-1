@@ -53,6 +53,7 @@ header {
 #Header .title {
   font-size: 2rem;
   justify-self: left;
+  max-width: 23ch;
 }
 
 #Header .filters {
