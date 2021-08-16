@@ -69,12 +69,12 @@ header {
 #willaya__filter {
   padding: 0.6rem 0;
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 2rem;
 
   display: block;
   border: none;
 
-  background-color: #64bf56;
+  background-color: #19C525;
 
   color: #ffffff;
   font-size: 1.2rem;
@@ -88,21 +88,20 @@ header {
 
 #willaya__filter:active,
 #willaya__filter:focus {
-  background-color: #64bf56;
   border-radius: 1.3rem 0 0 0rem;
 }
 
 #donnation__type {
   padding: 0.6rem 0;
   padding-left: 1rem;
-  padding-right: 5rem;
+  padding-right: 2rem;
 
   margin-left: 0.4rem;
 
   display: block;
   border: none;
 
-  background-color: #64bf56;
+  background-color: #19C525;
 
   border-radius: 0 2rem 2rem 0;
 
@@ -116,7 +115,6 @@ header {
 
 #donnation__type:active,
 #donnation__type:focus {
-  background-color: #64bf56;
   border-radius: 0 1.2rem 0rem 0;
 }
 
@@ -133,14 +131,14 @@ header {
 
 #Header option {
   background-color: #ffffff;
-  color: #64bf56;
+  color: #28a01b;
   font-weight: 600;
 }
 
 #submit_btn {
   padding: 0.6rem 0;
   padding-left: 1.5rem;
-  padding-right: 2.5rem;
+  padding-right: 2.6rem;
 
   margin-left: 1.4rem;
 
@@ -148,7 +146,7 @@ header {
   display: block;
   border: none;
 
-  background-color: #c02d2d;
+  background-color: #fe1132;
 
   color: #ffffff;
   font-size: 1.2rem;
@@ -177,7 +175,7 @@ header {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 2.1rem;
+  width: 2.3rem;
   display: grid;
   align-items: center;
   pointer-events: none;
@@ -210,15 +208,15 @@ header {
 }
 
 #List .association__name {
-  font-size: 2rem;
-  color: #64bf56;
+  font-size: 1.6rem;
+  color: #19C525;
 
   grid-area: association__name;
 }
 
 #List .willaya {
   display: inline-block;
-  background-color: #64bf56;
+  background-color: #19C525;
   border-radius: 0.5rem;
   padding: 0.5rem 1.2rem;
   margin-left: 1.3rem;
@@ -270,12 +268,12 @@ header {
   display: inline-block;
   padding: 0.5rem 1.2rem;
   margin: 0.3rem 0 0.3rem 0.4rem;
-  border: 0.1rem solid #64bf56;
+  border: 0.1rem solid #19C525;
   border-radius: 0.5rem;
 
   list-style-type: none;
   font-weight: 600;
-  color: #64bf56;
+  color: #19C525;
 }
 
 @media only screen and (max-width: 600px) {
