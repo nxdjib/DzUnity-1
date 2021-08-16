@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ------------------------------
@@ -113,39 +115,15 @@ header {
   border-radius: 0 1.2rem 0rem 0;
 }
 
-#recherche {
-  padding: 0.6rem 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  margin-left: 1.4rem;
-
-  border-radius: 1.5rem 0rem 0rem 1.5rem;
-  display: block;
-  border: none;
-
-
-  background-color: #c02d2d;
-
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  width: 15ch;
-}
-
-#recherche::placeholder {
-  color: #ffffff;
-}
-
-select {
-  cursor: pointer;
-}
-
 #Header input:focus,
 #Header input:active,
 #Header select:active,
 #Header select:focus {
   outline: none;
+}
+
+#Header select {
+  cursor: pointer;
 }
 
 #Header option {
@@ -155,13 +133,21 @@ select {
 }
 
 #submit_btn {
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  padding-right: 2.5rem;
+
+  margin-left: 1.4rem;
+
+  border-radius: 1.5rem;
   display: block;
   border: none;
-  height: 100%;
-  width: 3rem;
+
   background-color: #c02d2d;
-  border-radius: 0 2rem 2rem 0rem;
-  justify-self: left;
+
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 #Header .filters__wrapper {
@@ -173,7 +159,7 @@ select {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 1.7rem;
+  width: 1.8rem;
   display: grid;
   align-items: center;
   pointer-events: none;
@@ -181,12 +167,12 @@ select {
   font-size: 1.5rem;
 }
 
-#Header .search-icon {
+#Header .search_icon {
   position: absolute;
   top: 0;
-  right: 0.5rem;
+  right: 0;
   bottom: 0;
-  width: 1.7rem;
+  width: 2.1rem;
   display: grid;
   align-items: center;
   pointer-events: none;
@@ -247,6 +233,7 @@ select {
   align-items: center;
 
   padding: 1rem 0;
+  font-size: 1.1rem;
 
   grid-area: contact__infos;
 }
@@ -289,5 +276,8 @@ select {
 @media only screen and (max-width: 600px) {
   :root {
     font-size: 12px;
+  }
+  #Header .title {
+    font-size: 1.7rem;
   }
 }
