@@ -60,6 +60,11 @@
   height: 50px;
 
   grid-area: filters__container;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .filter__willaya {
@@ -73,6 +78,7 @@
   height: 50px;
 
   overflow: hidden;
+  transition: 350ms ease-in-out;
 }
 
 .filter__willaya:hover {
@@ -128,6 +134,8 @@
   height: 50px;
 
   overflow: hidden;
+
+  transition: 350ms ease-in-out;
 }
 
 .filter__donnationtype:hover {
@@ -347,4 +355,16 @@
 
 input {
   display: none;
+}
+
+/* ####################### details card */
+/* ####################### details card */
+
+
+/* ####################### details card */
+/* ####################### details card */
+.red{
+  color: red;
+  font-size: 50px;
+  position: absolute;
 }

@@ -69,6 +69,6 @@
 
       "vetement": true
     },
-    "needs": ["Bavette", "Couches", "Biafine", "Survettement"]
+    "needs": ["lait", "Biafine", "Survettement"]
   }
 ]

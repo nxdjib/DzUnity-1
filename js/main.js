@@ -32,13 +32,14 @@ function CardOutput(data) {
 
       </ul>
 
-
-      <button class="association__details__btn">
+      <a class="association__details__btn">
+  
         <span class="icon material-icons-sharp"> info </span>
 
         <p>details</p>
-      </button>
-    </div>
+
+      </a>
+        </div>
 
 </article>
 `;
@@ -207,47 +208,6 @@ function FilterbyDonnationType(selected_donnation) {
 // ############### FILTER FUNCTIONS
 // ############### FILTER FUNCTIONS
 
-// const selected_1 = document.getElementById("selected_1");
-// const selected_2 = document.getElementById("selected_2");
-// const get_results = document.getElementById("get_results");
-
-// get_results.addEventListener("click", DisplayValue);
-
-// function DisplayValue() {
-//   let ville_Filter = document.getElementsByName("ville");
-//   let donnation_Filter = document.getElementsByName("donnation_type");
-//   ville_Filter.forEach((ville) => {
-//     if (ville.checked) {
-//       selected_1.innerHTML = ville.value;
-
-//       FilterbyVille(ville.value);
-//     }
-//   });
-
-//   donnation_Filter.forEach((donnation) => {
-//     if (donnation.checked) {
-//       console.log(donnation.value);
-//       if (donnation.value == "data-d1") {
-//         selected_2.innerHTML = "Medical";
-//       }
-
-//       if (donnation.value == "data-d2") {
-//         selected_2.innerHTML = "Alimentaire";
-//       }
-
-//       if (donnation.value == "data-d3") {
-//         selected_2.innerHTML = "Vêtement";
-//       }
-
-//       if (donnation.value == "Type de donnation") {
-//         selected_2.innerHTML = "Type de donnation";
-//       }
-
-//       FilterbyDonnationType(donnation.value);
-//     }
-//   });
-// }
-
 const selected_1 = document.getElementById("selected_1");
 const selected_2 = document.getElementById("selected_2");
 
@@ -275,7 +235,6 @@ function DisplayValue() {
 
   donnation_Filter.forEach((donnation) => {
     if (donnation.checked) {
-      console.log(donnation.value);
       if (donnation.value == "data-d1") {
         selected_2.innerHTML = "Medical";
       }
