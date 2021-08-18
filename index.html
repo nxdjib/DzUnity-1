@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>DZ UNITY | List de point de récolte des dons en Algérie</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="container__wrapper">
+      <div id="header__container" class="container">
+        <img src="./img/white_logo.png" alt="Logo" class="logo" />
+
+        <h1 class="header__title">
+          Trouver un point de récolte des dons près de chez vous
+        </h1>
+
+        <div class="filters__container">
+          <div class="container">
+            <div class="filter__wrapper">
+              <ul class="filter__willaya">
+                <li class="willaya__list default">
+                  <label for="default_1" id="selected_1">Ville </label>
+                </li>
+                <li class="willaya__list">
+                  <input
+                    type="radio"
+                    name="ville"
+                    id="default_1"
+                    value="Villes"
+                  />
+                  <label for="default_1"> -- </label>
+                </li>
+                <li class="willaya__list">
+                  <input type="radio" name="ville" id="Alger" value="Alger" />
+                  <label for="Alger"> Alger </label>
+                </li>
+
+                <li class="willaya__list">
+                  <input type="radio" name="ville" id="Annaba" value="Annaba" />
+                  <label for="Annaba"> Annaba </label>
+                </li>
+
+                <li class="willaya__list">
+                  <input
+                    type="radio"
+                    name="ville"
+                    id="Tizi_Ouzou"
+                    value="Tizi Ouzou"
+                  />
+                  <label for="Tizi_Ouzou"> Tizi Ouzou </label>
+                </li>
+                <span class="icon material-icons-sharp"> arrow_drop_down </span>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="filter__wrapper">
+              <ul class="filter__donnationtype">
+                <li class="donnationtype__list default">
+                  <label for="default_2" id="selected_2">
+                    Type de donnation
+                  </label>
+                </li>
+
+                <li class="donnationtype__list">
+                  <label for="default_2"> -- </label>
+                  <input
+                    type="radio"
+                    name="donnation_type"
+                    id="default_2"
+                    value="Type de donnation"
+                  />
+                </li>
+
+                <li class="donnationtype__list">
+                  <label for="Medical"> Medical </label>
+                  <input
+                    type="radio"
+                    name="donnation_type"
+                    id="Medical"
+                    value="data-d1"
+                  />
+                </li>
+
+                <li class="donnationtype__list">
+                  <label for="Alimentaire"> Alimentaire </label>
+                  <input
+                    type="radio"
+                    name="donnation_type"
+                    id="Alimentaire"
+                    value="data-d2"
+                  />
+                </li>
+
+                <li class="donnationtype__list">
+                  <label for="Vetement"> Vêtements </label>
+                  <input
+                    type="radio"
+                    name="donnation_type"
+                    id="Vetement"
+                    value="data-d3"
+                  />
+                </li>
+                <span class="icon material-icons-sharp"> arrow_drop_down </span>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <p id="get_results">click me</p>
+    <!-- card container  -->
+
+    <main class="container__wrapper">
+      <div id="card__container" class="container"></div>
+    </main>
+
+    <!-- container de carte  -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
