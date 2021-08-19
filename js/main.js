@@ -1,6 +1,13 @@
 // ############### RETURN CARD TEMPLATE FUNCTION
 // ############### RETURN CARD TEMPLATE FUNCTION
 
+function Needs_list(data) {
+  return `
+        ${data
+          .map((n) => `<li class="details__list__items">${n}</li>`)
+          .join("")}
+    `;
+}
 // ############### RETURN CARD TEMPLATE FUNCTION
 // ############### RETURN CARD TEMPLATE FUNCTION
 
@@ -59,76 +66,66 @@ function BuildNewCard(data) {
         let output = "data-det" + i;
         return output;
       }
-      let output = `
-      <article
-      class="card"
-      data-v="${data.willaya}"
-      data-details="${details_inc()}"
-      ${setCardFillters(data.needs_type)}
-      >
-      <h2 class="association__name">${data.name}</h2>
-    
-      <p class="association__willaya">${data.willaya}</p>
-    
-      <address class="association__address">
-        <span class="icon material-icons-sharp"> location_on </span>
-    
-        <p>${data.address}</p>
-      </address>
-    
-      <a class="association__phone">
-        <span class="icon material-icons-sharp"> call </span>
-    
-        <p>${data.phone}</p>
+      let output = `<article
+  class="card"
+  data-v="${data.willaya}"
+  data-details="${details_inc()}"
+  ${setCardFillters(data.needs_type)}
+>
+  <h2 class="association__name">${data.name}</h2>
+
+  <p class="association__willaya">${data.willaya}</p>
+
+  <address class="association__address">
+    <span class="icon material-icons-sharp"> location_on </span>
+
+    <p>${data.address}</p>
+  </address>
+
+  <a class="association__phone">
+    <span class="icon material-icons-sharp"> call </span>
+
+    <p>${data.phone}</p>
+  </a>
+
+  <div class="association__needs__type">
+    <ul>
+      <p class="needs__label">Besoin :</p>
+
+      ${CheckNeedsType(data.needs_type)}
+    </ul>
+    <label for="${details_inc()}">
+      <a class="association__details__btn">
+        <span class="icon material-icons-sharp"> info </span>
+
+        <p>details</p>
       </a>
-    
-      <div class="association__needs__type">
-        <ul>
-          <p class="needs__label">Besoin :</p>
-    
-          ${CheckNeedsType(data.needs_type)}
-        </ul>
-        <label for="${details_inc()}">
-          <a class="association__details__btn">
-            <span class="icon material-icons-sharp"> info </span>
-    
-            <p>details</p>
-          </a>
-    
-          <input
-            type="radio"
-            name="details"
-            id="${details_inc()}"
-            value="${details_inc()}"
-          />
-        </label>
-      </div>
-    </article>
-    
-    <section class="details_box" data-det="${details_inc()}">
-      <div class="details__card">
-        <div class="details__card__heading">
-          <p class="details__title">Besoin de l'assocition</p>
-          <label for="close_btn" class="close_btn">
-            <input type="radio" name="details" id="close_btn" value="close" />
-            X
-          </label>
-        </div>
-    
-        <ul class="details__list">
-          <li class="details__list__items">Lait</li>
-          <li class="details__list__items">Eau</li>
-          <li class="details__list__items">Lait</li>
-          <li class="details__list__items">Couches</li>
-          <li class="details__list__items">Eau</li>
-          <li class="details__list__items">Lait</li>
-          <li class="details__list__items">Eau</li>
-          <li class="details__list__items">Lait</li>
-          <li class="details__list__items">Couches</li>
-          <li class="details__list__items">Eau</li>
-        </ul>
-      </div>
-    </section>`;
+
+      <input
+        type="radio"
+        name="details"
+        id="${details_inc()}"
+        value="${details_inc()}"
+      />
+    </label>
+  </div>
+</article>
+
+<section class="details_box" data-det="${details_inc()}">
+  <div class="details__card">
+    <div class="details__card__heading">
+      <p class="details__title">Besoin de l'assocition</p>
+      <label for="close_btn" class="close_btn">
+        <input type="radio" name="details" id="close_btn" value="close" />
+        X
+      </label>
+    </div>
+
+    <ul class="details__list">
+      ${Needs_list(data.needs)}
+    </ul>
+  </div>
+</section>`;
       return output;
     }
   }

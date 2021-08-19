@@ -233,9 +233,9 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "association__name association__willaya"
+    "association__name association__name"
     "association__address association__phone"
-    "association__needs__type association__needs__type";
+    "association__needs__type association__willaya";
 
   grid-gap: 20px;
   align-items: center;
@@ -245,7 +245,7 @@
 
 .association__name {
   color: #38b88d;
-  font-size: 30px;
+  font-size: 25px;
 
   grid-area: association__name;
 }
@@ -253,10 +253,12 @@
 .association__willaya {
   color: #404040;
   font-weight: bold;
-
+  font-size: 14px;
   grid-area: association__willaya;
   justify-self: end;
-  align-self: end;
+  /* align-self: end; */
+  opacity: 0.7;
+
 }
 
 .association__address {
@@ -295,15 +297,13 @@
   display: flex;
   align-items: center;
 
-  margin-top: 10px;
-
   grid-area: association__needs__type;
 }
 
 .needs__label {
   color: #404040;
   font-weight: bold;
-
+  font-size: 18px;
   display: inline;
 }
 
@@ -312,7 +312,7 @@
 
   color: #404040;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;
 
   background-color: #d9d9d9;
   border-radius: 7px;
@@ -332,7 +332,7 @@
   margin-left: 10px;
 
   color: #38b88d;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 
   grid-area: association__details__btn;
@@ -347,7 +347,7 @@
   margin-right: 2px;
 
   color: #38b88d;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* ####################### card */
@@ -368,7 +368,7 @@ input {
   top: 0;
   bottom: 0;
   z-index: 10;
-  display: grid;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 30px;
