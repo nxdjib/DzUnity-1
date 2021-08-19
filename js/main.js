@@ -23,7 +23,7 @@ function CheckNeedsType(data) {
 
   let medical_needs = ``;
   let alimentaire_needs = ``;
-  let vetement_needs = ``;
+  let autre_needs = ``;
 
   if (data.medical) {
     medical_needs = `<li class="needs">Medical</li>`;
@@ -33,14 +33,14 @@ function CheckNeedsType(data) {
     alimentaire_needs = `<li class="needs">Alimentaire</li>`;
   }
 
-  if (data.vetement) {
-    vetement_needs = `<li class="needs">Vetements</li>`;
+  if (data.autre) {
+    autre_needs = `<li class="needs">Autre</li>`;
   }
 
   output = `
   ${medical_needs}
   ${alimentaire_needs}
-  ${vetement_needs}
+  ${autre_needs}
    `;
 
   return output;
@@ -211,7 +211,7 @@ function setCardFillters(data) {
 
   let medical_needs = ``;
   let alimentaire_needs = ``;
-  let vetement_needs = ``;
+  let autre_needs = ``;
 
   if (data.medical) {
     medical_needs = true;
@@ -225,16 +225,16 @@ function setCardFillters(data) {
     alimentaire_needs = false;
   }
 
-  if (data.vetement) {
-    vetement_needs = true;
+  if (data.autre) {
+    autre_needs = true;
   } else {
-    vetement_needs = false;
+    autre_needs = false;
   }
 
   output = `
   data-d1="${medical_needs}"
   data-d2="${alimentaire_needs}"
-  data-d3="${vetement_needs}"
+  data-d3="${autre_needs}"
   `;
 
   return output;
@@ -303,7 +303,7 @@ function DisplayValue() {
       }
 
       if (donnation.value == "data-d3") {
-        selected_2.innerHTML = "Vêtement";
+        selected_2.innerHTML = "Autre";
       }
 
       if (donnation.value == "Type de donnation") {
