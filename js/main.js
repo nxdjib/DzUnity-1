@@ -117,7 +117,7 @@ function BuildNewCard(data) {
       <p class="details__title">Besoin de l'assocition</p>
       <label for="close_btn" class="close_btn">
         <input type="radio" name="details" id="close_btn" value="close" />
-        X
+        <span class="close-icon material-icons-sharp">visibility_off</span>
       </label>
     </div>
 
@@ -156,6 +156,7 @@ function GET__data(url, callback) {
 GET__data("./data/list.json", function (request) {
   if (request.status == 200) {
     let associationList = JSON.parse(request.responseText);
+
     BuildNewCard(associationList);
 
     const details_value = document.getElementsByName("details");
@@ -163,11 +164,7 @@ GET__data("./data/list.json", function (request) {
 
     details_value.forEach((dvalue) => {
       dvalue.addEventListener("change", displayDetails);
-
       function displayDetails() {
-        console.log(dvalue.value);
-        // FilterBYdetails(dvalue.value);
-
         details_box.forEach((e) => {
           let box_details = e.getAttribute("data-det");
           e.style = "display :grid";
@@ -175,8 +172,6 @@ GET__data("./data/list.json", function (request) {
           if (box_details != dvalue.value) {
             e.style = "display :none";
           }
-
-          console.log(box_details);
         });
       }
     });
@@ -267,6 +262,7 @@ const selected_2 = document.getElementById("selected_2");
 
 const ville_Filter = document.getElementsByName("ville");
 const donnation_Filter = document.getElementsByName("donnation_type");
+const label_d = document.querySelectorAll(".label_d");
 
 ville_Filter.forEach((ville) => {
   ville.addEventListener("change", DisplayValue);
@@ -275,10 +271,20 @@ ville_Filter.forEach((ville) => {
 
 donnation_Filter.forEach((donnation) => {
   donnation.addEventListener("change", DisplayValue);
+
+  DisplayValue();
+});
+
+label_d.forEach((label) => {
+  label.addEventListener("click", DisplayValue);
+
   DisplayValue();
 });
 
 function DisplayValue() {
+  const getbody = document.getElementsByTagName("body");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
   ville_Filter.forEach((ville) => {
     if (ville.checked) {
       selected_1.innerHTML = ville.value;

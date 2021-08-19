@@ -70,5 +70,221 @@
       "vetement": true
     },
     "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Annaba",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Association Sidra",
+
+    "willaya": "Alger",
+
+    "address": "Stade 20 août 1955 à Ruisseaux, Alger",
+
+    "phone": "0560 72 65 86",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": false
+    },
+    "needs": ["Bavette", "Semoule", "Couches", "Lait", "Farine"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Alger",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": true,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Alger",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": true,
+
+      "vetement": false
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Alger",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": false,
+
+      "alimentaire": true,
+
+      "vetement": false
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Alger",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": false
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": true,
+
+      "alimentaire": true,
+
+      "vetement": false
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
+  },
+  {
+    "name": "Agence Terra Australis Tourisme & voyages",
+
+    "willaya": "Tizi Ouzou",
+
+    "address": "03 Rue Mohamed Belouizdad, Douar 16000",
+
+    "phone": "0770 19 08 10",
+
+    "needs_type": {
+      "medical": false,
+
+      "alimentaire": false,
+
+      "vetement": true
+    },
+    "needs": ["lait", "Biafine", "Survettement"]
   }
 ]
