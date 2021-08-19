@@ -90,24 +90,24 @@ function BuildNewCard(data) {
 
   <div class="association__needs__type">
     <ul>
-      <p class="needs__label">Besoin :</p>
+      <p class="needs__label">Besoins :</p>
 
       ${CheckNeedsType(data.needs_type)}
-    </ul>
-    <label for="${details_inc()}">
-      <a class="association__details__btn">
-        <span class="icon material-icons-sharp"> info </span>
-
-        <p>details</p>
-      </a>
-
-      <input
-        type="radio"
-        name="details"
-        id="${details_inc()}"
-        value="${details_inc()}"
-      />
-    </label>
+      </ul>
+      <label class="btn_dt_label" for="${details_inc()}">
+        <a class="association__details__btn">
+          <span class="icon material-icons-sharp"> info </span>
+  
+          <p>details</p>
+        </a>
+  
+        <input
+          type="radio"
+          name="details"
+          id="${details_inc()}"
+          value="${details_inc()}"
+        />
+      </label>
   </div>
 </article>
 

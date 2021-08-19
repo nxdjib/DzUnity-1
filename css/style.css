@@ -284,7 +284,6 @@ html {
 }
 
 .association__address {
-  display: flex;
   align-items: center;
 
   color: #404040;
@@ -344,7 +343,9 @@ html {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
+.btn_dt_label {
+  display: inline;
+}
 .association__details__btn {
   display: flex;
   align-items: center;
@@ -468,10 +469,6 @@ input {
 }
 
 @media only screen and (max-width: 700px) {
-  body {
-    background-color: lightblue;
-  }
-
   .container__wrapper {
     padding: 0 10px;
   }
@@ -501,20 +498,20 @@ input {
     grid-template-columns: auto auto;
     grid-template-areas:
       "logo header__title"
-      "logo filters__container";
+      "filters__container filters__container";
+    justify-content: start;
+    grid-gap: 15px;
 
-    grid-gap: 20px;
-
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   .logo {
     background-color: #38b88d;
     border-radius: 50%;
 
-    width: 120px;
-    padding: 10px;
-    margin: 20px;
+    width: 60px;
+    padding: 5px;
+    margin: 00px;
 
     grid-area: logo;
     align-self: center;
@@ -523,7 +520,7 @@ input {
 
   .header__title {
     color: #404040;
-    font-size: 30px;
+    font-size: 17px;
     max-width: 27ch;
     grid-area: header__title;
     align-self: end;
@@ -532,8 +529,7 @@ input {
   .filters__container {
     display: flex;
     position: relative;
-
-    height: 40px;
+    height: 27px;
 
     grid-area: filters__container;
 
@@ -551,26 +547,27 @@ input {
 
     left: 0;
 
-    height: 40px;
+    height: 27px;
 
     overflow: hidden;
     transition: 350ms ease-in-out;
   }
 
   .filter__willaya:hover {
-    height: 202px;
+    height: 136px;
   }
 
   .willaya__list {
     list-style-type: none;
 
-    width: 180px;
-    height: 40px;
+    width: 140px;
+    height: 27px;
     border: none;
     border-bottom: 1px solid #ffffff;
 
     color: #ffffff;
     font-weight: bold;
+    font-size: 14px;
 
     display: grid;
     align-content: center;
@@ -605,9 +602,9 @@ input {
 
     position: absolute;
 
-    left: 190px;
+    left: 150px;
 
-    height: 40px;
+    height: 27px;
 
     overflow: hidden;
 
@@ -615,20 +612,21 @@ input {
   }
 
   .filter__donnationtype:hover {
-    height: 202px;
+    height: 136px;
   }
 
   .donnationtype__list {
     list-style-type: none;
 
-    width: 210px;
-    height: 40px;
+    width: 190px;
+    height: 27px;
 
     border: none;
     border-bottom: 1px solid #ffffff;
 
     color: #ffffff;
     font-weight: bold;
+    font-size: 14px;
 
     display: grid;
     align-content: center;
@@ -642,7 +640,6 @@ input {
     right: 0;
     top: 0;
     bottom: 0;
-    padding-left: 20px;
 
     display: grid;
     align-content: center;
@@ -671,25 +668,28 @@ input {
     color: #ffffff;
     font-size: 25px;
 
-    top: 8px;
+    top: 2px;
     right: 10px;
     z-index: 10;
   }
 
   #selected_1,
   #selected_2 {
-    padding: 20px;
+    padding: 10px;
+    padding-left: 15px;
+
     border: none;
   }
   #selected_1:hover,
   #selected_2:hover {
-    padding: 20px;
+    padding: 10px;
+    padding-left: 15px;
     border: none;
   }
 
   .default {
-    height: 43px;
-    border-bottom: 3px solid #ffffff;
+    height: 28px;
+    border-bottom: 1px solid #ffffff;
   }
 
   /* ####################### header */
@@ -704,7 +704,7 @@ input {
 
     padding-bottom: 50px;
 
-    margin-top: 240px;
+    margin-top: 140px;
   }
 
   .card {
@@ -718,9 +718,8 @@ input {
     grid-template-areas:
       "association__name association__name"
       "association__address association__address"
-      "association__phone association__willaya "
-      "association__needs__type association__needs__type";
-
+      "association__phone association__phone"
+      "association__needs__type association__willaya";
     grid-gap: 10px;
     align-items: center;
 
@@ -808,9 +807,9 @@ input {
   }
 
   .association__details__btn {
-    display: flex;
+    display: inline-flex;
+
     align-items: center;
-    justify-self: end;
     border: none;
     background-color: transparent;
     margin-left: 10px;
@@ -853,20 +852,20 @@ input {
     z-index: 55;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 
     display: none;
   }
 
   .details__card {
     background-color: #ffffff;
-    min-width: 400px;
-    max-width: 700px;
+    min-width: auto;
+    max-width: auto;
     padding: 40px;
     border-radius: 40px;
   }
   .details__title {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
 
     color: #38b88d;
@@ -911,8 +910,8 @@ input {
   .details__list__items {
     list-style-type: none;
     display: inline-block;
-
-    padding: 5px 15px;
+    font-size: 12px;
+    padding: 5px 10px;
     border-radius: 7px;
     margin: 5px;
     background-color: #d9d9d9;
