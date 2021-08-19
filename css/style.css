@@ -257,10 +257,12 @@ html {
   grid-template-columns: auto auto;
   grid-template-areas:
     "association__name association__name"
-    "association__address association__phone"
-    "association__needs__type association__willaya";
+    "association__address association__address"
+    "association__phone association__phone"
+    "association__needs__type association__needs__type"
+    "association__willaya btn_dt_label";
 
-  grid-gap: 20px;
+  grid-gap: 15px;
   align-items: center;
 
   width: 100%;
@@ -278,8 +280,7 @@ html {
   font-weight: bold;
   font-size: 14px;
   grid-area: association__willaya;
-  justify-self: end;
-  /* align-self: end; */
+  justify-self: start;
   opacity: 0.5;
 }
 
@@ -290,12 +291,20 @@ html {
   font-style: normal;
 
   grid-area: association__address;
+
+  display: flex;
+  align-items: center;
 }
 
 .association__address .icon {
   margin-right: 5px;
   color: #38b88d;
   font-size: 22px;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .association__phone {
@@ -305,13 +314,18 @@ html {
   color: #404040;
 
   grid-area: association__phone;
-  justify-self: end;
+  justify-self: start;
 }
 
 .association__phone .icon {
   margin-right: 5px;
   color: #38b88d;
   font-size: 22px;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .association__needs__type {
@@ -345,6 +359,8 @@ html {
 }
 .btn_dt_label {
   display: inline;
+  grid-area: btn_dt_label;
+  justify-self: end;
 }
 .association__details__btn {
   display: flex;
@@ -356,7 +372,7 @@ html {
 
   color: #38b88d;
   font-size: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   grid-area: association__details__btn;
 
@@ -409,6 +425,8 @@ html {
 .details__title {
   font-size: 25px;
   font-weight: bold;
+
+  margin-right: 25px;
 
   color: #38b88d;
 }
@@ -463,6 +481,60 @@ html {
 
 /* ####################### details card */
 /* ####################### details card */
+
+/* --------------- FOOOTERR  */
+/* --------------- FOOOTERR  */
+
+.fixed__footer {
+  background-color: #38b88d;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed__footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed__footer ul {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 15px;
+  margin-right: 15px;
+
+  border-right: 5px solid #ffffff;
+}
+.fixed__footer li {
+  list-style-type: none;
+}
+
+.fixed__footer img {
+  margin-top: 5px;
+  height: 25px;
+}
+
+.fixed__footer a {
+  text-decoration: none;
+
+  color: #ffffff;
+  font-weight: bold;
+}
+.fixed__footer a:hover {
+  opacity: 0.8;
+}
+/* --------------- FOOOTERR  */
+/* --------------- FOOOTERR  */
 
 input {
   display: none;
@@ -719,7 +791,8 @@ input {
       "association__name association__name"
       "association__address association__address"
       "association__phone association__phone"
-      "association__needs__type association__willaya";
+      "association__needs__type association__needs__type"
+      "association__willaya btn_dt_label";
     grid-gap: 10px;
     align-items: center;
 
@@ -738,7 +811,7 @@ input {
     font-weight: bold;
     font-size: 11px;
     grid-area: association__willaya;
-    justify-self: end;
+    justify-self: start;
     opacity: 0.5;
   }
 
@@ -805,7 +878,11 @@ input {
     margin-top: 3px;
     margin-bottom: 3px;
   }
-
+  .btn_dt_label {
+    display: inline;
+    grid-area: btn_dt_label;
+    justify-self: end;
+  }
   .association__details__btn {
     display: inline-flex;
 

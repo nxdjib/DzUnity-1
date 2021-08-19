@@ -78,7 +78,6 @@ function BuildNewCard(data) {
 
   <address class="association__address">
     <span class="icon material-icons-sharp"> location_on </span>
-
     <p>${data.address}</p>
   </address>
 
@@ -94,11 +93,12 @@ function BuildNewCard(data) {
 
       ${CheckNeedsType(data.needs_type)}
       </ul>
+  </div>
       <label class="btn_dt_label" for="${details_inc()}">
         <a class="association__details__btn">
           <span class="icon material-icons-sharp"> info </span>
   
-          <p>details</p>
+          <p>détails</p>
         </a>
   
         <input
@@ -108,7 +108,6 @@ function BuildNewCard(data) {
           value="${details_inc()}"
         />
       </label>
-  </div>
 </article>
 
 <section class="details_box" data-det="${details_inc()}">
